@@ -27,7 +27,3 @@ and update your `.env`
 ```
 yarn dev
 ```
-
-## Build
-
-You may
