@@ -80,21 +80,21 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex lg:hidden">
+					<!-- <div class="flex lg:hidden"> -->
 						<!-- Mobile menu button -->
-						<button
+						<!-- <button
 							type="button"
 							class="inline-flex items-center justify-center rounded-md bg-indigo-600 p-2 text-indigo-200 hover:bg-indigo-500 hover:bg-opacity-75 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
 							aria-controls="mobile-menu"
 							aria-expanded="false"
 						>
-							<span class="sr-only">Open main menu</span>
+							<span class="sr-only">Open main menu</span> -->
 							<!--
 				  Heroicon name: outline/bars-3
   
 				  Menu open: "hidden", Menu closed: "block"
 				-->
-							<svg
+							<!-- <svg
 								class="block h-6 w-6"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -108,13 +108,13 @@
 									stroke-linejoin="round"
 									d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
 								/>
-							</svg>
+							</svg> -->
 							<!--
 				  Heroicon name: outline/x-mark
   
 				  Menu open: "block", Menu closed: "hidden"
 				-->
-							<svg
+							<!-- <svg
 								class="hidden h-6 w-6"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -126,7 +126,7 @@
 								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 							</svg>
 						</button>
-					</div>
+					</div> -->
 					<div class="hidden lg:ml-4 lg:block">
 						<div class="flex items-center">
 							<button
@@ -157,10 +157,10 @@
 			</div>
 
 			<!-- Mobile menu, show/hide based on menu state. -->
-			<div class="lg:hidden" id="mobile-menu">
-				<div class="space-y-1 px-2 pt-2 pb-3">
+			<!-- <div class="lg:hidden" id="mobile-menu">
+				<div class="space-y-1 px-2 pt-2 pb-3"> -->
 					<!-- Current: "bg-indigo-700 text-white", Default: "text-white hover:bg-indigo-500 hover:bg-opacity-75" -->
-					<a
+					<!-- <a
 						href="#"
 						class="bg-indigo-700 text-white block rounded-md py-2 px-3 text-base font-medium"
 						aria-current="page">Todos</a
@@ -189,15 +189,15 @@
 						class="text-white hover:bg-indigo-500 hover:bg-opacity-75 block rounded-md py-2 px-3 text-base font-medium"
 						>Reports</a
 					>
-				</div>
-				<div class="border-t border-indigo-700 pt-4 pb-3">
+				</div> -->
+				<!-- <div class="border-t border-indigo-700 pt-4 pb-3">
 					<button
 						type="button"
 						class="px-5 ml-auto flex-shrink-0 rounded-full bg-indigo-600 p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
 					>
-						<span class="sr-only">View notifications</span>
+						<span class="sr-only">View notifications</span> -->
 						<!-- Heroicon name: outline/bell -->
-						<svg
+						<!-- <svg
 							class="h-6 w-6"
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -214,7 +214,7 @@
 						</svg>
 					</button>
 				</div>
-			</div>
+			</div> -->
 		</nav>
 		<header class="py-10">
 			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
