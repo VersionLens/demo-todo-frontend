@@ -51,12 +51,12 @@
 						</div>
 					</div>
 					<div class="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
-						<div class="w-full max-w-lg lg:max-w-xs">
+						<!-- <div class="w-full max-w-lg lg:max-w-xs">
 							<label for="search" class="sr-only">Search</label>
 							<div class="relative text-gray-400 focus-within:text-gray-600">
-								<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+								<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"> -->
 									<!-- Heroicon name: mini/magnifying-glass -->
-									<svg
+									<!-- <svg
 										class="h-5 w-5"
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 20 20"
@@ -78,7 +78,7 @@
 									name="search"
 								/>
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<!-- <div class="flex lg:hidden"> -->
 						<!-- Mobile menu button -->
