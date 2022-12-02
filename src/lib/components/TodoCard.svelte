@@ -1,13 +1,17 @@
 <script>
 	export let title;
 	export let description;
+
+	import translate from '$lib/translate'; 
 </script>
 
 <li class="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
 	<div class="flex w-full items-center justify-between space-x-6 p-6">
 		<div class="flex-1 truncate">
 			<div class="flex items-center space-x-3">
-				<h3 class="truncate text-xl font-medium text-gray-900">{title}</h3>
+				{#await translate(title) then translated}
+					<h3 class="truncate text-xl font-medium text-gray-900">{translated}</h3>
+				{/await}
 			</div>
 			<p class="mt-1 truncate text-gray-500">{description || ''}</p>
 		</div>
