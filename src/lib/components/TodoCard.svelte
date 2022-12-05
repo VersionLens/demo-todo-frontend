@@ -1,10 +1,27 @@
 <script>
+	import { mutation } from 'svelte-apollo';
+	import { DELETE_TODO } from '$lib/graphql/mutations';
+
 	export let id;
 	export let title;
 	export let description;
 
-	const deleteTodo = (id) => {
+	const deleteTodoMutation = mutation(DELETE_TODO);
+	const deleteTodo = async (id) => {
 		console.log(id);
+
+		try {
+			const response = await deleteTodoMutation({
+				variables: { id: parseInt(id) }
+			});
+			if (response.error) {
+				console.error(`Failed to delete todo with id ${id}. GraphQL error: ${response.error}`);
+				return;
+			}
+		} catch (error) {
+			console.error(`Failed to delete todo`);
+			console.error(error);
+		}
 	};
 </script>
 
@@ -21,7 +38,8 @@
 		<div class="-mt-px flex divide-x divide-gray-200">
 			<div class="flex w-0 flex-1 hover:bg-gray-100">
 				<div
-					class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500"
+					on:click={() => deleteTodo(id)}
+					class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500 cursor-pointer"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +55,6 @@
 				</div>
 			</div>
 			<!-- <div
-				on:click={() => deleteTodo(id)}
 				class="-ml-px flex w-0 flex-1 hover:bg-gray-100 cursor-pointer"
 			>
 				<div
