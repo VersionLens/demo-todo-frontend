@@ -10,6 +10,8 @@
 	Loading...
 {:else if $todos.error}
 	<h1>Error: {$todos.error.message}</h1>
+{:else if $todos.data.todos.length === 0}
+	<h1>No todos found</h1>
 {:else}
 	<ul>
 		{#each $todos.data.todos as todo}
