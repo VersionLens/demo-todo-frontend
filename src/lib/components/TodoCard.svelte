@@ -18,6 +18,7 @@
 				console.error(`Failed to delete todo with id ${id}. GraphQL error: ${response.error}`);
 				return;
 			}
+			location.reload();
 		} catch (error) {
 			console.error(`Failed to delete todo`);
 			console.error(error);
