@@ -12,12 +12,10 @@
 {:else if $todos.error}
 	<h1>Error: {$todos.error.message}</h1>
 {:else}
-	<div class="mb-4">
-		<TodoInput />
-	</div>
+	<TodoInput />
 	<ul>
 		{#each $todos.data.todos as todo}
-			<div class="mb-4">
+			<div class="mt-4">
 				<TodoCard title={todo.title} />
 			</div>
 		{/each}
