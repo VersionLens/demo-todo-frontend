@@ -16,7 +16,7 @@
 	<ul>
 		{#each $todos.data.todos as todo}
 			<div class="mt-4">
-				<TodoCard title={todo.title} />
+				<TodoCard id={todo.id} title={todo.title} />
 			</div>
 		{/each}
 	</ul>
