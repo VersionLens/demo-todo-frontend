@@ -28,6 +28,7 @@
 					console.error(`Failed to add todo with data ${values}. GraphQL error: ${response.error}`);
 					return;
 				}
+				location.reload();
 			} catch (error) {
 				console.error(`Failed to add todo`);
 				console.error(error);
