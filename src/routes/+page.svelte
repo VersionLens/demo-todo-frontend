@@ -2,6 +2,7 @@
 	import { query } from 'svelte-apollo';
 	import { GET_MY_TODOS } from '$lib/graphql/queries';
 	import TodoCard from '$lib/components/TodoCard.svelte';
+	import TodoInput from '$lib/components/TodoInput.svelte';
 
 	const todos = query(GET_MY_TODOS);
 </script>
@@ -11,9 +12,10 @@
 {:else if $todos.error}
 	<h1>Error: {$todos.error.message}</h1>
 {:else}
+	<TodoInput />
 	<ul>
 		{#each $todos.data.todos as todo}
-			<div class="mb-4">
+			<div class="mt-4">
 				<TodoCard title={todo.title} />
 			</div>
 		{/each}
