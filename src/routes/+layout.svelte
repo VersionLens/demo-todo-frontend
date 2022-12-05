@@ -51,12 +51,11 @@
 						</div>
 					</div>
 					<div class="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
-						<!-- <div class="w-full max-w-lg lg:max-w-xs">
+						<div class="w-full max-w-lg lg:max-w-xs">
 							<label for="search" class="sr-only">Search</label>
 							<div class="relative text-gray-400 focus-within:text-gray-600">
-								<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"> -->
-									<!-- Heroicon name: mini/magnifying-glass -->
-									<!-- <svg
+								<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+									<svg
 										class="h-5 w-5"
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 20 20"
@@ -78,23 +77,23 @@
 									name="search"
 								/>
 							</div>
-						</div> -->
+						</div>
 					</div>
 					<!-- <div class="flex lg:hidden"> -->
-						<!-- Mobile menu button -->
-						<!-- <button
+					<!-- Mobile menu button -->
+					<!-- <button
 							type="button"
 							class="inline-flex items-center justify-center rounded-md bg-indigo-600 p-2 text-indigo-200 hover:bg-indigo-500 hover:bg-opacity-75 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
 							aria-controls="mobile-menu"
 							aria-expanded="false"
 						>
 							<span class="sr-only">Open main menu</span> -->
-							<!--
+					<!--
 				  Heroicon name: outline/bars-3
   
 				  Menu open: "hidden", Menu closed: "block"
 				-->
-							<!-- <svg
+					<!-- <svg
 								class="block h-6 w-6"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -109,12 +108,12 @@
 									d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
 								/>
 							</svg> -->
-							<!--
+					<!--
 				  Heroicon name: outline/x-mark
   
 				  Menu open: "block", Menu closed: "hidden"
 				-->
-							<!-- <svg
+					<!-- <svg
 								class="hidden h-6 w-6"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -159,8 +158,8 @@
 			<!-- Mobile menu, show/hide based on menu state. -->
 			<!-- <div class="lg:hidden" id="mobile-menu">
 				<div class="space-y-1 px-2 pt-2 pb-3"> -->
-					<!-- Current: "bg-indigo-700 text-white", Default: "text-white hover:bg-indigo-500 hover:bg-opacity-75" -->
-					<!-- <a
+			<!-- Current: "bg-indigo-700 text-white", Default: "text-white hover:bg-indigo-500 hover:bg-opacity-75" -->
+			<!-- <a
 						href="#"
 						class="bg-indigo-700 text-white block rounded-md py-2 px-3 text-base font-medium"
 						aria-current="page">Todos</a
@@ -190,14 +189,14 @@
 						>Reports</a
 					>
 				</div> -->
-				<!-- <div class="border-t border-indigo-700 pt-4 pb-3">
+			<!-- <div class="border-t border-indigo-700 pt-4 pb-3">
 					<button
 						type="button"
 						class="px-5 ml-auto flex-shrink-0 rounded-full bg-indigo-600 p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
 					>
 						<span class="sr-only">View notifications</span> -->
-						<!-- Heroicon name: outline/bell -->
-						<!-- <svg
+			<!-- Heroicon name: outline/bell -->
+			<!-- <svg
 							class="h-6 w-6"
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
