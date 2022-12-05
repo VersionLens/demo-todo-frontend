@@ -12,9 +12,10 @@
 {:else if $todos.error}
 	<h1>Error: {$todos.error.message}</h1>
 {:else if $todos.data.todos.length === 0}
+	<TodoInput />
 	<button
 		type="button"
-		class="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center"
+		class="mt-4 relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center"
 	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
