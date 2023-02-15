@@ -33,5 +33,7 @@
 		"yup": "^0.32.11"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"@tailwindcss/aspect-ratio": "^0.4.2"
+	}
 }
